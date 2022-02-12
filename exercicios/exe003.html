@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados.cursoemvideo</title>
+    <style>
+        body{
+            background-color: rgb(121, 121, 231);
+            color: white;
+            font: normal 28px arial;
+        }
+        h1{
+            color: rgb(196, 196, 48);
+        }
+    </style>
+</head>
+<body>
+    <h1>Convertendo tipos de dados em JavaScript</h1>
+  
+    <h2>Strings em números :</h2>
+        <ul>
+            <li>Number.parsInt(n) -Números Inteiros</li>
+            <li>Number.parsFloat(n)- Números fracionados </li>
+            <li>Number(n)- Números Inteiros e Fracionados</li>
+        </ul>
+     
+        <h2>Número para string::</h2>
+        <ul>
+        <li>var s='javascript'</li>
+        <li>'Eu estou aprendendo s'</li> <!--Não faz interpolação-->
+        <li>'Eu estou aprendendo'+s'</li> <!--Usa concatenação-->
+        <li>`Eu estou aprendendo ${s}+s`</li> <!--Usa template string-->
+    </ul>
+    <script>
+        // number + number    + adição     
+       // string + string    + concatenação
+       //converter string em number --> ParsInt(número inteiro) ou parsFloat(número fracionado)  ou Number(ambos)
+
+       var n1 = Number (window.prompt('Digite um número:')) //comando prompt retorna string
+       var n2 = Number(window.prompt('Digite outro número:')) //comando prompt retorna string
+       var s= n1+ n2
+       window.alert ('A soma dos valores é ' + s)
+       
+       //s.lenght  // quants caracteres tem uma string
+       //s.toUppercase// coloca em letras Maiúsculas
+       //s.toLowerCase  // coloca em letras Minúsculas
+
+    </script>
+</body>
+</html>
+
