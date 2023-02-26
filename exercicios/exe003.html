@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tratamento de dados.cursoemvideo</title>
+    <title>Convertendo String em Número e Número em String em JS</title>
     <style>
         body{
             background-color: rgb(121, 121, 231);
@@ -21,8 +21,8 @@
   
     <h2>Strings em números :</h2>
         <ul>
-            <li>Number.parsInt(n) -Números Inteiros</li>
-            <li>Number.parsFloat(n)- Números fracionados </li>
+            <li>Number.parseInt(n) -Números Inteiros</li>
+            <li>Number.parseFloat(n)- Números fracionados </li>
             <li>Number(n)- Números Inteiros e Fracionados</li>
         </ul>
      
@@ -36,14 +36,14 @@
     <script>
         // number + number    + adição     
        // string + string    + concatenação
-       //converter string em number --> ParsInt(número inteiro) ou parsFloat(número fracionado)  ou Number(ambos)
+       //converter string em number --> ParseInt(número inteiro) ou ParseFloat(número fracionado)  ou Number(ambos)
 
-       var n1 = Number (window.prompt('Digite um número:')) //comando prompt retorna string
-       var n2 = Number(window.prompt('Digite outro número:')) //comando prompt retorna string
-       var s= n1+ n2
-       window.alert ('A soma dos valores é ' + s)
+       var n1 = Number.parseFloat(window.prompt('Digite um número: ')) //comando prompt retorna string
+       var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) //comando prompt retorna string
+       var s= n1 + n2
+       window.alert('A soma dos valores é ' + s)
        
-       //s.lenght  // quants caracteres tem uma string
+       //s.lenght  // quantos caracteres tem uma string
        //s.toUppercase// coloca em letras Maiúsculas
        //s.toLowerCase  // coloca em letras Minúsculas
 
